@@ -163,22 +163,22 @@ void *_realloc(void *, unsigned int, unsigned int);
 int bfree(void **);
 
 /* proto_atoi.c */
-int interactive(info_t *);
-int is_delim(char, char *);
-int _isalpha(int);
-int _atoi(char *);
+int interactives(info_t *);
+int is_delims(char, char *);
+int _isalphas(int);
+int _atois(char *);
 
 /* proto_errors1.c */
-int _erratoi(char *);
-void print_error(info_t *, char *);
-int print_d(int, int);
-char *convert_number(long int, int, int);
-void remove_comments(char *);
+int _erratois(char *);
+void print_errors(info_t *, char *);
+int print_ds(int, int);
+char *convert_numbers(long int, int, int);
+void removes_comments(char *);
 
-/* proto_builtin.c */
-int _myexit(info_t *);
-int _mycd(info_t *);
-int _myhelp(info_t *);
+/* proto_built.c */
+int _myexits(info_t *);
+int _mycds(info_t *);
+int _myhelps(info_t *);
 
 /* proto_builtin1.c */
 int _myhistory(info_t *);
