@@ -120,18 +120,18 @@ void find_cmd(info_t *);
 void fork_cmd(info_t *);
 
 /* proto_parser.c */
-int is_cmd(info_t *, char *);
-char *dup_chars(char *, int, int);
-char *find_path(info_t *, char *, char *);
+int cmd(info_t *, char *);
+char *dup_char(char *, int, int);
+char *find_paths(info_t *, char *, char *);
 
 /* loophsh.c */
 int loophsh(char **);
 
 /* proto_errors.c */
-void _eputs(char *);
-int _eputchar(char);
-int _putfd(char c, int fd);
-int _putsfd(char *str, int fd);
+void puts(char *);
+int _eputchars(char);
+int _putfds(char c, int fd);
+int _putsfds(char *str, int fd);
 
 /* proto_string.c */
 int _strlen(char *);
@@ -146,18 +146,18 @@ void _puts(char *);
 int _putchar(char);
 
 /* proto_exits.c */
-char *_strncpy(char *, char *, int);
-char *_strncat(char *, char *, int);
-char *_strchr(char *, char);
+char *_strncpys(char *, char *, int);
+char *_strncats(char *, char *, int);
+char *_strchrs(char *, char);
 
 /* proto_tokenizer.c */
 char **strtow(char *, char *);
 char **strtow2(char *, char);
 
 /* proto_realloc.c */
-char *_memset(char *, char, unsigned int);
-void ffree(char **);
-void *_realloc(void *, unsigned int, unsigned int);
+char *_memsets(char *, char, unsigned int);
+void ffrees(char **);
+void *_reallocs(void *, unsigned int, unsigned int);
 
 /* proto_memory.c */
 int bfree(void **);
